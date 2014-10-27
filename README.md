@@ -17,19 +17,19 @@ Target
 The target specified in the metadata.json file is set for every access under the /useragentscript/app path which currently only contains the /useragentscript/app/index.html file.
 
 ```
-"target-path" : "/useragentsscript/app/**",
+"target-path" : "/useragentscript/app/**",
 ```
 
 Running the Example
 -------------------
 
-The target for this example is setup to be applied to anything under the /useragentsscript/app/ path. There is only the index.html resource available here.
+The target for this example is setup to be applied to anything under the /useragentscript/app/ path. There is only the index.html resource available here.
 
 To try out this example:
 
-* Open a browser and go to http://localhost:8080/useragentsscript/app/index.html
+* Open a browser and go to http://localhost:8080/useragentscript/app/index.html
 
-* Now go to the console's storage page at http://localhost:8080/admin#/applications/useragentsscript/storage/storage/browse/useragents
+* Now go to the console's storage page at http://localhost:8080/admin#/applications/useragentscript/storage/storage/browse/useragents
 
 * You should see an entry with your browsers user agent in there and a counter for the number of times that page has been accessed by that particular browser.
 
@@ -54,7 +54,7 @@ Script
 
 ```
 // The name of this application
-var APPLICATION_NAME = "useragentsscript";
+var APPLICATION_NAME = "useragentscript";
 // The resource path to the storage resource
 var STORAGE_RESOURCE = "/" + APPLICATION_NAME + "/storage";
 // The resource path to the storage collection

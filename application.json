@@ -1,6 +1,6 @@
 {
-  "id" : "useragentsscript",
-  "name" : "useragentssscript",
+  "id" : "useragentscript",
+  "name" : "User Agent Script",
   "resources" : {
     "app" : {
       "type" : "filesystem",
@@ -23,10 +23,10 @@
       "config" : {
         "policies" : [ {
           "policyName" : "URIPolicy",
-          "policyResourceEndpoint" : "/useragentsscript/uri-policy/authzCheck"
+          "policyResourceEndpoint" : "/useragentscript/uri-policy/authzCheck"
         }, {
           "policyName" : "ACLPolicy",
-          "policyResourceEndpoint" : "/useragentsscript/acl-policy/authzCheck",
+          "policyResourceEndpoint" : "/useragentscript/acl-policy/authzCheck",
           "includedResourcePrefixes" : [ "/useragentsscript" ]
         } ]
       }

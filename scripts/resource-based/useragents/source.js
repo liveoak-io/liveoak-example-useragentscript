@@ -10,7 +10,7 @@
 
 
 // The name of this application
-var APPLICATION_NAME = "useragentsscript";
+var APPLICATION_NAME = "useragentscript";
 // The resource path to the storage resource
 var STORAGE_RESOURCE = "/" + APPLICATION_NAME + "/storage";
 // The resource path to the storage collection
