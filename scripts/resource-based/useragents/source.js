@@ -47,8 +47,8 @@ function postRead(response, libraries) {
     // check if we already have this useragent in the colletion.
     var resources = client.read(USERAGENT_COLLECTION, { "q": "{'useragent': '"+ useragent + "'}", "fields": "*(*)"});
     // if we do already have this useragent, then update its count number
-    if (resources.members != null && resources.members.size() > 0) {
-      var resource = resources.members.get(0);
+    if (resources.members != null && resources.members.length > 0) {
+      var resource = resources.members[0];
       resource.properties.count = resource.properties.count + 1;
       client.update(USERAGENT_COLLECTION + "/" + resource.id, resource);
     } else {
