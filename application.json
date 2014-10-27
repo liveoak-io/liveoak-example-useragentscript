@@ -27,7 +27,7 @@
         }, {
           "policyName" : "ACLPolicy",
           "policyResourceEndpoint" : "/useragentscript/acl-policy/authzCheck",
-          "includedResourcePrefixes" : [ "/useragentsscript" ]
+          "includedResourcePrefixes" : [ "/useragentscript" ]
         } ]
       }
     },
