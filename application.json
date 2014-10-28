@@ -1,6 +1,7 @@
 {
   "id" : "useragentscript",
   "name" : "User Agent Script",
+  "example" : true,
   "resources" : {
     "app" : {
       "type" : "filesystem",
