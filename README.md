@@ -37,18 +37,6 @@ To try out this example:
 
 * Try accessing the index.html page in other browsers (or even things like wget or curl will work). And notice the new entries added to the useragents collection.
 
-```
-id: "product123"
-name: "Large Mug"
-description: "A large mug, perfect for coffee"
-price: 8.95
-```
-
-* Try and create a new entry, but this time by leaving out a one of the fields or using an invalid price value (eg -0.99, 0.9, "8.95", "$8.95", "5 dollars", ...). You should receive an error and your new entry will not be added to the storage.
-
-* Or try and update an already existing entry but removing one of the required fields. The updated value should not be saved to storage.
-
-
 Script
 ------
 
