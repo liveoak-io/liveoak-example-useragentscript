@@ -59,10 +59,6 @@
       "config" : {
         "script-directory" : "${application.dir}/scripts"
       }
-    },
-    "application-clients" : {
-      "type" : "application-clients",
-      "config" : { }
     }
   }
 }
