@@ -1,6 +1,5 @@
 {
-  "id" : "useragentscript",
-  "name" : "User Agent Script",
+  "name" : "${application.id}",
   "example" : "useragentscript",
   "resources" : {
     "app" : {
@@ -24,11 +23,11 @@
       "config" : {
         "policies" : [ {
           "policyName" : "URIPolicy",
-          "policyResourceEndpoint" : "/useragentscript/uri-policy/authzCheck"
+          "policyResourceEndpoint" : "/${application.id}/uri-policy/authzCheck"
         }, {
           "policyName" : "ACLPolicy",
-          "policyResourceEndpoint" : "/useragentscript/acl-policy/authzCheck",
-          "includedResourcePrefixes" : [ "/useragentscript" ]
+          "policyResourceEndpoint" : "/${application.id}/acl-policy/authzCheck",
+          "includedResourcePrefixes" : [ "/${application.id}" ]
         } ]
       }
     },
@@ -51,7 +50,7 @@
     "storage" : {
       "type" : "mongo",
       "config" : {
-        "db" : "LiveOakExamples-UserAgentScript"
+        "db" : "${application.id}"
       }
     },
     "scripts" : {
